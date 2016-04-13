@@ -1,0 +1,63 @@
+@charset "utf-8";
+@import "normalize";
+@import "colors";
+
+$dot-size: 1rem;
+$dots-per-row: 18;
+
+html {
+  font-size: 60px;
+  background: lighten(#000, 20%);
+  color: white;
+}
+
+body {
+  min-height: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+#dots {
+  position: relative;
+  margin: 1.5rem auto;
+  width: $dots-per-row + rem;
+
+  &.start div {
+    margin: 0 !important;
+    opacity: 0;
+  }
+
+  div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+
+    border-radius: 50%;
+    display: inline-block;
+    height: $dot-size;
+    width: $dot-size;
+    transition: all 1s ease-in-out,
+                margin 1s cubic-bezier(1.000, -0.5, 0.405, 1.425);
+    transform: scale(0.9);
+  }
+
+  $length: length($colors-list);
+  $mod-y: 0;
+
+  @for $i from 1 through $length {
+    $color: nth($colors-list, $i);
+    $mod-x: ($length - $i) % $dots-per-row;
+    
+    div:nth-of-type(#{$i}) {
+      background: nth($colors-list, $i);
+      margin-left: $mod-x + rem;
+      margin-top: $mod-y + rem;
+      transition-delay: $i / 100 + s;
+    }
+
+    @if $i % $dots-per-row == 0 {
+      $mod-y: $mod-y + 1;
+    }
+  }
+}
