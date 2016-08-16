@@ -1,7 +1,24 @@
-document.onkeydown = function(e) {
-  var dots = document.getElementById('dots'),
-      name = dots.className,
-      new_name = name == "start" ? "" : "start";
+const dots = document.getElementById('dots')
+  , sequence = [
+    'start', 'purpose', 'me', 'us',
+    'research', 'values', 'discuss'
+  ]
 
-  // dots.className = new_name;
+let index = 0
+
+function slideDirection (key) {
+  switch (key) {
+    case 'ArrowLeft':
+    case 'ArrowDown':
+      return index--; break
+    case 'ArrowRight':
+    case 'ArrowUp':
+      return index++; break
+    default:
+      return index;
+  }
+}
+
+document.onkeydown = function(event) {
+  dots.className = sequence[slideDirection(event.key)] || sequence[sequence.length - q]
 };

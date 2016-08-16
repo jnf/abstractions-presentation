@@ -2,8 +2,8 @@
 @import "normalize";
 @import "colors";
 
-$dots-per-row: 18;
-$dot-size: (100.0/$dots-per-row) + 0vw;
+$dots-per-row: 10;
+$dot-size: (100.0/$dots-per-row) + 0vmin;
 
 html {
   font-size: 60px;
@@ -17,7 +17,7 @@ body {
 }
 
 #dots {
-  background: lighten(#000, 20%);
+  background: lighten(#000, 10%);
   position: relative;
   margin: 0;
   width: 100vw;
@@ -25,22 +25,20 @@ body {
 
   &.start div {
     margin: 0 !important;
-    opacity: 0;
   }
 
   div {
     position: absolute;
     left: 0;
     top: 0;
-    opacity: 1;
 
     border-radius: 50%;
     display: inline-block;
     height: $dot-size;
     width: $dot-size;
+    transform: scale(0.85);
     transition: all 1s ease-in-out,
                 margin 1s cubic-bezier(1.000, -0.5, 0.405, 1.425);
-    transform: scale(0.9);
   }
 
   $length: length($colors-list);
@@ -54,7 +52,7 @@ body {
       background: nth($colors-list, $i);
       margin-left: $mod-x;
       margin-top: $mod-y;
-      transition-delay: $i / 100 + s;
+      transition-delay: $i / (random(10) * 50) + s;
     }
 
     @if $i % $dots-per-row == 0 {
