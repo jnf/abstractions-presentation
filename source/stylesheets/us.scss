@@ -1,0 +1,30 @@
+#slide.us {
+  #dots {
+    $mod-y: 0vh;
+
+    @for $i from 1 through $length {
+      $color: nth($colors-list, $i);
+      $mod-x: (($length - $i) % $dots-per-row) * $dot-size;
+      
+      > div:nth-of-type(#{$i}) {
+        background: nth($colors-list, $i);
+        margin-left: $mod-x;
+        margin-top: $mod-y;
+        transition-delay: $i / 50 + s;
+      }
+
+      @if $i % $dots-per-row == 0 {
+        $mod-y: $mod-y + 10;
+      }
+    }
+  }
+}
+
+#slide.us {
+  #title {
+    .us {
+      opacity: 1;
+      top: 0;
+    }
+  }
+}

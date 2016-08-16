@@ -3,34 +3,94 @@
 @import "colors";
 
 $dots-per-row: 10;
-$dot-size: (100.0/$dots-per-row) + 0vmin;
+$dot-size: (100.0/$dots-per-row) + 0vh;
+$length: length($colors-list);
+$mod-y: 0vh;
+
+@import "start";
+@import "purpose";
+@import "me";
+@import "us";
+@import "research";
+@import "values";
+@import "discuss";
 
 html {
-  font-size: 60px;
+  font: normal normal 60px/1.2 "Helvetica Neue", Helvetica, sans;
   color: white;
   height: 100vh;
 }
 
 body {
+  background: lighten(#000, 10%);
   height: 100vh;
   overflow: hidden;
 }
 
+#text {
+  background: lighten(#000, 30%);
+  float: right;
+  overflow: auto;
+  position: relative;
+  width: 35vw;
+  height: 100vh;
+
+  #title {
+    font-size: 1rem;
+    margin: 0 0 5vh;
+    position: relative;
+    height: 40vh;
+    text-align: center;
+
+    div {
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      top: -100vh;
+      transition: all 1s ease-in-out;
+      width: 100%;
+    }
+  }
+
+  #legend {
+    position: relative;
+    height: 55vh;
+    margin-top: 60vh;
+    transition: all 1s ease-in-out;
+
+    > div {
+      opacity: 0;
+      transition: all 1s ease-in-out;
+    }
+
+    span {
+      display: block;
+      font-size: 0.5rem;
+      line-height: 0.75rem;
+      padding-left: 0.5rem;
+
+      &:before {
+        display: inline-block;
+        content: "•";
+        vertical-align: middle;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
 #dots {
-  background: lighten(#000, 10%);
   position: relative;
   margin: 0;
   width: 100vw;
   height: 100vh;
 
-  &.start div {
-    margin: 0 !important;
-  }
-
-  div {
+  > div {
     position: absolute;
     left: 0;
     top: 0;
+
+    margin: 0;
 
     border-radius: 50%;
     display: inline-block;
@@ -39,24 +99,5 @@ body {
     transform: scale(0.85);
     transition: all 1s ease-in-out,
                 margin 1s cubic-bezier(1.000, -0.5, 0.405, 1.425);
-  }
-
-  $length: length($colors-list);
-  $mod-y: 0vh;
-
-  @for $i from 1 through $length {
-    $color: nth($colors-list, $i);
-    $mod-x: (($length - $i) % $dots-per-row) * $dot-size;
-    
-    div:nth-of-type(#{$i}) {
-      background: nth($colors-list, $i);
-      margin-left: $mod-x;
-      margin-top: $mod-y;
-      transition-delay: $i / (random(10) * 50) + s;
-    }
-
-    @if $i % $dots-per-row == 0 {
-      $mod-y: $mod-y + 10;
-    }
   }
 }

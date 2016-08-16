@@ -1,0 +1,66 @@
+#slide.values {
+  #dots > div {
+    opacity: 0;
+
+    &:nth-of-type(10) {
+      $dot-size: 50vh;
+      background-color: $empathy;
+      opacity: 0.5;
+
+      margin-left: 10vh;
+      margin-top: 10vh;
+
+      height: $dot-size;
+      width: $dot-size;
+    }
+
+    &:nth-of-type(5) {
+      $dot-size: 50vh;
+      background-color: $patience;
+      opacity: 0.75;
+
+      margin-left: 40vh;
+      margin-top: 10vh;
+
+      height: $dot-size;
+      width: $dot-size;
+    }
+
+    &:nth-of-type(3) {
+      $dot-size: 50vh;
+      background-color: $consistency;
+      opacity: 0.7;
+
+      margin-left: 25vh;
+      margin-top: 30vh;
+
+      height: $dot-size;
+      width: $dot-size;
+    }
+  }
+}
+
+
+#slide.values {
+  #title {
+    .values {
+      opacity: 1;
+      top: 0;
+    }
+  }
+
+  #legend {
+    margin-top: 0;
+
+    .values {
+      opacity: 1;
+
+      span {
+        &:nth-child(1):before { color: $patience; }
+        &:nth-child(2):before { color: $empathy; }
+        &:nth-child(3):before { color: $consistency; }
+        &:nth-child(4):before { color: $teaching; }
+      }
+    }
+  }
+}

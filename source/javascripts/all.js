@@ -1,4 +1,4 @@
-const dots = document.getElementById('dots')
+const slide = document.getElementById('slide')
   , sequence = [
     'start', 'purpose', 'me', 'us',
     'research', 'values', 'discuss'
@@ -10,15 +10,15 @@ function slideDirection (key) {
   switch (key) {
     case 'ArrowLeft':
     case 'ArrowDown':
-      return index--; break
+      return --index; break
     case 'ArrowRight':
     case 'ArrowUp':
-      return index++; break
+      return ++index; break
     default:
       return index;
   }
 }
 
 document.onkeydown = function(event) {
-  dots.className = sequence[slideDirection(event.key)] || sequence[sequence.length - q]
+  slide.className = sequence[slideDirection(event.key)] || sequence[sequence.length - 1]
 };

@@ -1,0 +1,26 @@
+#slide.me {
+  #dots > div {
+    opacity: 0;
+
+    &:first-of-type {
+      $dot-size: 50vh;
+      background-color: $me;
+      opacity: 1;
+
+      margin-left: 25vh;
+      margin-top: 25vh;
+
+      height: $dot-size;
+      width: $dot-size;
+    }
+  }
+}
+
+#slide.me {
+  #title {
+    .me {
+      opacity: 1;
+      top: 0;
+    }
+  }
+}
