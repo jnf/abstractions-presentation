@@ -1,4 +1,4 @@
-#slide.start
+#slide
   #dots
     - 100.times do
       %div
@@ -8,10 +8,23 @@
         .purpose The Purpose of This Discussion
         .me This Is Me
         .us This Is Us
+        .in10 For Every Ten of Us
+        .in10edu Most of Us Do Not Have a CS Education
+        .in10exp Most of Us Haven't Been Doing This Long
         .research There's Been Research
         .values Teaching is a Blended Skill
         .discuss Let's Discuss
       %section#legend
+        .in10
+          %span.footnote Data from http://stackoverflow.com/research/developer-survey-2016#developer-profile-experience
+        .in10edu
+          %span Has a CS Degree
+          %span Doesn't
+          %span.footnote Data from http://stackoverflow.com/research/developer-survey-2016#developer-profile-experience
+        .in10exp
+          %span Less Than 10 Years
+          %span 10 Years or More
+          %span.footnote Data from http://stackoverflow.com/research/developer-survey-2016#developer-profile-experience
         .values
           %span Empathy
           %span Patience
