@@ -1,10 +1,20 @@
 const slide = document.getElementById('slide')
   , sequence = [
-    'start', 'purpose', 'me', 'us',
-    'research', 'values', 'discuss'
+    'start',
+    'purpose',
+    'research',
+    'me',
+    'us',
+    'in10',
+    'in10edu',
+    'in10exp',
+    'values',
+    'discuss',
   ]
 
-let index = 0
+
+slide.className = sequence[0]
+var index = 0
 
 function slideDirection (key) {
   switch (key) {
