@@ -1,0 +1,32 @@
+#slide.in10 #title .in10 { opacity: 1; top: 0; }
+#slide.in10edu #title .in10edu { opacity: 1; top: 0; }
+#slide.in10exp #title .in10exp { opacity: 1; top: 0; }
+
+
+
+#slide.in10 #legend .in10 { opacity: 1; }
+#slide.in10edu {
+  #legend {
+    .in10edu {
+      opacity: 1;
+
+      span {
+        &:nth-child(1):before { color: $consistency; }
+        &:nth-child(2):before { color: $teaching; }
+      }
+    }
+  }
+}
+
+#slide.in10exp {
+  #legend {
+    .in10exp {
+      opacity: 1;
+
+      span {
+        &:nth-child(1):before { color: $patience; }
+        &:nth-child(2):before { color: $empathy; }
+      }
+    }
+  }
+}

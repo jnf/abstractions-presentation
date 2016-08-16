@@ -11,6 +11,7 @@ $mod-y: 0vh;
 @import "purpose";
 @import "me";
 @import "us";
+@import "in10";
 @import "research";
 @import "values";
 @import "discuss";
@@ -57,6 +58,9 @@ body {
     height: 55vh;
 
     > div {
+      height: 100%;
+      position: absolute;
+      top: 0;
       opacity: 0;
       transition: all 1s ease-in-out;
     }
@@ -72,6 +76,16 @@ body {
         content: "•";
         vertical-align: middle;
         font-size: 2rem;
+      }
+
+      &.footnote {
+        position: absolute;
+        bottom: 0.25rem;
+        font-size: 0.25rem;
+        line-height: 1;
+        font-style: italic;
+
+        &:before { content: ""; }
       }
     }
   }
