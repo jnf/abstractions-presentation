@@ -11,7 +11,7 @@ $dots: 4 17 22 39 44 57 61 77 81 98;
 
     @for $i from 1 to $length+1 {
       $key: nth($dots, $i);
-      $color: nth($colors-list, $i);
+      $color: nth($colors-list, $key);
       &:nth-child(#{$key}) {
         background-color: $color;
         margin-left: 0vh + ($dot-size * ($i - 0.75));

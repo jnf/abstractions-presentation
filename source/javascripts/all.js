@@ -1,5 +1,6 @@
 const slide = document.getElementById('slide')
   , sequence = [
+    'dzzy',
     'start',
     'purpose',
     'research',
