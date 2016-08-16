@@ -2,7 +2,61 @@
 #slide.in10edu #title .in10edu { opacity: 1; top: 0; }
 #slide.in10exp #title .in10exp { opacity: 1; top: 0; }
 
+$dots: 4 17 22 39 44 57 61 77 81 98;
+@mixin in10() {
+  $length: length($dots);
 
+  #dots > div {
+    transition: all 0s 1s, background-color 1s 0s;
+
+    @for $i from 1 to $length+1 {
+      $key: nth($dots, $i);
+      $color: nth($colors-list, $i);
+      &:nth-child(#{$key}) {
+        background-color: $color;
+        margin-left: 0vh + ($dot-size * ($i - 0.75));
+        margin-top: 50vh - $dot-size;
+        transition: all 1s 1s ease-in-out;
+      }
+    }
+  }
+}
+
+#slide.in10 {
+  @include in10;
+}
+
+#slide.in10edu {
+  @include in10;
+
+  #dots {
+    @for $i from 1 to 4 {
+      $key: nth($dots, $i);
+      div:nth-child(#{$key}) { background-color: $edu-cs; transition-delay: 0s; }
+    }
+
+    @for $i from 4 to 11 {
+      $key: nth($dots, $i);
+      div:nth-child(#{$key}) { background-color: $edu-self; transition-delay: 0s; }
+    }
+  }
+}
+
+#slide.in10exp {
+  @include in10;
+
+  #dots {
+    @for $i from 1 to 8 {
+      $key: nth($dots, $i);
+      div:nth-child(#{$key}) { background-color: $exp-less; transition-delay: 0s; }
+    }
+
+    @for $i from 8 to 11 {
+      $key: nth($dots, $i);
+      div:nth-child(#{$key}) { background-color: $exp-more; transition-delay: 0s; }
+    }
+  }
+}
 
 #slide.in10 #legend .in10 { opacity: 1; }
 #slide.in10edu {
@@ -11,8 +65,8 @@
       opacity: 1;
 
       span {
-        &:nth-child(1):before { color: $consistency; }
-        &:nth-child(2):before { color: $teaching; }
+        &:nth-child(1):before { color: $edu-cs; }
+        &:nth-child(2):before { color: $edu-self; }
       }
     }
   }
@@ -24,8 +78,8 @@
       opacity: 1;
 
       span {
-        &:nth-child(1):before { color: $patience; }
-        &:nth-child(2):before { color: $empathy; }
+        &:nth-child(1):before { color: $exp-less; }
+        &:nth-child(2):before { color: $exp-more; }
       }
     }
   }
