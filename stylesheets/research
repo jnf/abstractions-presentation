@@ -1,0 +1,3 @@
+#slide.research #title .research {
+  opacity: 1;
+  top: 0; }
