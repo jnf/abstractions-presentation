@@ -1,41 +1,32 @@
 #slide.values {
   #dots > div {
+    $dot-size: 50vh;
+    height: $dot-size;
     opacity: 0;
+    width: $dot-size;
 
     &:nth-of-type(10) {
-      $dot-size: 50vh;
       background-color: $empathy;
       opacity: 0.5;
 
       margin-left: 10vh;
       margin-top: 10vh;
-
-      height: $dot-size;
-      width: $dot-size;
     }
 
     &:nth-of-type(5) {
-      $dot-size: 50vh;
       background-color: $patience;
       opacity: 0.75;
 
       margin-left: 40vh;
       margin-top: 10vh;
-
-      height: $dot-size;
-      width: $dot-size;
     }
 
     &:nth-of-type(3) {
-      $dot-size: 50vh;
       background-color: $consistency;
       opacity: 0.7;
 
       margin-left: 25vh;
       margin-top: 30vh;
-
-      height: $dot-size;
-      width: $dot-size;
     }
   }
 }
@@ -50,8 +41,6 @@
   }
 
   #legend {
-    margin-top: 0;
-
     .values {
       opacity: 1;
 

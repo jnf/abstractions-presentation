@@ -1,3 +1,48 @@
+// adapted from https://css-tricks.com/snippets/sass/placing-items-circle/
+// credit to Ana Tudor -- https://twitter.com/thebabydino
+
+#slide.discuss {
+  #dots {
+    $item-count: 20;
+    $circle-size: 80vh;
+    $item-size: 10vh;
+
+    position: relative;
+    padding: 0;
+    border-radius: 50%;
+
+    
+    > div {
+      display: block;
+      height: $item-size;
+      left: 50vh;
+      margin: -($item-size / 2);
+      opacity: 1;
+      position: absolute;
+      top:  50%; 
+      transition: none;
+      width:  $item-size;
+
+      $angle: (360 / $item-count);
+      $rotation: 0;
+
+      @for $i from 1 through $item-count {
+        $color: nth($colors-list, $i * 4);
+        $delay: 0s + ($i * 0.1s);
+        &:nth-of-type(#{$i}) {
+          background-color: $color;
+          transition: all 1s $delay ease-in-out;
+          transform: 
+            rotate($rotation * 1deg) 
+            translate($circle-size / 2) 
+        }
+
+        $rotation: $rotation + $angle;
+      }
+    }
+  }
+}
+
 #slide.discuss {
   #title {
     .discuss {
