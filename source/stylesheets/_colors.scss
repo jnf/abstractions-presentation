@@ -2,8 +2,8 @@ $colors-list: #5d93a7 #b3e791 #4002d5 #06cdea #193ed6 #9f12b7 #08e187 #1e35ea #6
 
 $me: #43efe7;
 
-$edu-self: #68ea7c;
-$edu-cs: #8aa3b1;
+$edu-self: darken(#68ea7c, 20%);
+$edu-cs: lighten(#68ea7c, 20%);
 
 $exp-more: rgb(244, 95, 24);
 $exp-less: lighten($exp-more, 30%);
