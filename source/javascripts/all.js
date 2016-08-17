@@ -3,12 +3,12 @@ const slide = document.getElementById('slide')
     'dzzy',
     'start',
     'purpose',
-    'research',
     'me',
     'us',
     'in10',
     'in10edu',
     'in10exp',
+    'research',
     'values',
     'discuss',
   ]
