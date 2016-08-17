@@ -23,4 +23,10 @@
       top: 0;
     }
   }
+
+  #legend .me {
+    opacity: 1;
+
+    span:before { color: $me; }
+  }
 }
