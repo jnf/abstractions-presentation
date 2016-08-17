@@ -45,8 +45,8 @@
       opacity: 1;
 
       span {
-        &:nth-child(1):before { color: $patience; }
-        &:nth-child(2):before { color: $empathy; }
+        &:nth-child(1):before { color: $empathy; }
+        &:nth-child(2):before { color: $patience; }
         &:nth-child(3):before { color: $consistency; }
         &:nth-child(4):before { color: $teaching; }
       }
