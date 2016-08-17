@@ -32,12 +32,12 @@ $dots: 4 17 22 39 44 57 61 77 81 98;
   #dots {
     @for $i from 1 to 4 {
       $key: nth($dots, $i);
-      div:nth-child(#{$key}) { background-color: $edu-cs; transition-delay: 0s; }
+      > div:nth-child(#{$key}) { background-color: $edu-cs; transition-delay: 0s; }
     }
 
     @for $i from 4 to 11 {
       $key: nth($dots, $i);
-      div:nth-child(#{$key}) { background-color: $edu-self; transition-delay: 0s; }
+      > div:nth-child(#{$key}) { background-color: $edu-self; transition-delay: 0s; }
     }
   }
 }
@@ -48,12 +48,12 @@ $dots: 4 17 22 39 44 57 61 77 81 98;
   #dots {
     @for $i from 1 to 8 {
       $key: nth($dots, $i);
-      div:nth-child(#{$key}) { background-color: $exp-less; transition-delay: 0s; }
+      > div:nth-child(#{$key}) { background-color: $exp-less; transition-delay: 0s; }
     }
 
     @for $i from 8 to 11 {
       $key: nth($dots, $i);
-      div:nth-child(#{$key}) { background-color: $exp-more; transition-delay: 0s; }
+      > div:nth-child(#{$key}) { background-color: $exp-more; transition-delay: 0s; }
     }
   }
 }
