@@ -1,6 +1,7 @@
 #slide.dzzy #title .dzzy {
   opacity: 1;
-  top: 0; }
+  top: 0;
+  transition: none; }
 
 #slide.start #title .start {
   opacity: 1;
