@@ -48,10 +48,21 @@ So what does this mean? Well, how about this:
 
 I'm not talking about developers. Those weren't even my words. It was an excerpt from _Pragmatic Thinking and Learning_ from the __Pragamtic Bookshelf__. That's where I first learned about the research conducted by the Dreyfus Brothers (Hubert and Stuart). They wanted to learn how human learn as to better teach computers to learn, so they studied nursing, a field remarkably like programming, except about an order of magnitude more difficult.
 
+## Five Stages of Skill Mastery
+The Brothers Dreyfus called what they learned the Dreyfus Model of Skill Acquisition. They five stages they described mark a transition of understanding that moves from context-free to context-dependenct, analytical to intuitive. Each stage is recognizable and provides a path forward for increasing the expertise of those we mentor or teach. In my classroom, for example, I aim for my students to progress through being a _Novice_ and into the realm of being an _Advanced Beginner_.
+
+It's these traits, and how to teach to them, that I want to discuss with all of you. If you want to know what constitutes an _Advanced Beginner_, join our conversation today.
+
+- __Novice__
+- __Advanced Beginner__
+- __Competence__
+- __Proficiency__
+- __Expertise__
+
 ## Teaching is a Blended Skill
  >> Empathy, Patience, and Consistency
  
- The model they describe, known as the Dreyfus Model of Skill Acquisition, presents expertise as a gradual transition from novice to expert, concrete to abstract, context-free to context-dependent.
+Takeaway: If you're enticed by one of the other amazing discussions happening in here, here is my tl;dr on how to be a good mentor or teacher. It's a set of overlapping skills that need equal representation, every damn day. It's really hard and really tiring, but also extraordinarily rewarding.
 
 ## Let's Discuss
 All developers and community memebers are welcome. Everyone has a perspective to contribute. Senior devs, let's talk mentoring approach and strategy and figure out how to grow our empathy as we reach across the experience divide. Junior devs, let's talk about moving through the levels of expertise as defined by the Brothers Dreyfus. 

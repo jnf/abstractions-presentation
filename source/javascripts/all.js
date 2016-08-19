@@ -9,6 +9,7 @@ const slide = document.getElementById('slide')
     'in10edu',
     'in10exp',
     'research',
+    'stages',
     'values',
     'discuss',
   ]

@@ -1,0 +1,53 @@
+#slide.stages {
+  #dots {
+    $dot-size: 10vmin;
+    $left: 0vmin;
+
+    position: relative;
+    padding: 0;
+    border-radius: 50%;
+
+    
+    > div {
+      display: block;
+      top: 50vmin - $dot-size/2;
+      left: $left;
+      position: absolute;
+      transition: none;
+
+      @for $i from 1 through 5 {
+        $color: nth($stages, $i);
+        $delay: $i + s;
+        $size: $dot-size * (1 + $i/3);
+
+        &:nth-of-type(#{$i + 40}) {
+          background-color: $color;
+          height: $size;
+          width:  $size;
+          left: ($i - 1) * 1.4 * $size/2;
+          top:  50vmin - $size/2;
+          transition: background-color 1s $delay ease-in-out,
+                      left 1s $delay ease-in-out,
+                      top 0s 0s;
+        }
+      }
+    }
+  }
+}
+
+#slide.stages {
+  #title .stages,
+  #legend .stages { opacity: 1; top: 0; }
+
+  #legend .stages {
+    @for $i from 1 through 5 {
+      $color: nth($stages, $i);
+
+      span:nth-of-type(#{$i}) {
+        &:before {
+          color: $color;
+        } 
+      }
+    }
+  }
+}

@@ -12,3 +12,7 @@ $empathy: #e513c8;
 $patience: #239df0;
 $consistency: #2ee507;
 $teaching: rgb(133, 85, 195);
+
+$stage: #a35fcb;
+// $stages: lighten($stage, 40%) lighten($stage, 30%) lighten($stage, 20%) lighten($stage, 10%) $stage;
+$stages: lighten($stage, 20%) lighten($stage, 10%) $stage darken($stage, 10%) darken($stage, 20%)
