@@ -1,4 +1,5 @@
 # Things You Forgot Were Hard
+
 ## Content Warning: Motion & Color Shifting
 If you experience motion sickness or similar, please be aware that in a brief five minutes, I'm gonna move through about ten slides. There's some moving text and colors, plus some shifting colors and patterns.
 
@@ -25,8 +26,10 @@ My session isn't a presentation or demonstration. It's a discussion. I've got so
 - Many less privileged than myself
 - All trying to find our way, do the best we can, care for ourselves, our families, and our communitites
 
+Yinz may have seen the Stack Overflow annual developer report. Not exactly a rigorous study, but it helped me put some numbers to my experience and observations. 
+
 ## For Every Ten of Us
-Yinz may have seen the Stack Overflow annual developer report. Not exactly a rigorous study, but it helped me put some numbers to my experience and observations. If we were to talk to any ten of us, we'd get ten different stories. But there are some broad similarities I'd like to discuss.
+If we were to talk to any ten of us, we'd get ten different stories. But there are some broad similarities I'd like to discuss.
 
 ## Most of Us Do Not Have a CS Education
 The developer survey says most of us came into software development by a means that's not a computer science degree.

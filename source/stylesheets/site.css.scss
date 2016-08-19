@@ -26,7 +26,12 @@ html {
 body {
   background: lighten(#000, 10%);
   height: 100vh;
-  overflow: hidden;
+}
+
+#notes {
+  font-size: 0.3rem;
+  margin: 1rem auto;
+  width: 85vw;
 }
 
 #images {
