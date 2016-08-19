@@ -6,12 +6,12 @@ Error: Undefined variable: "$me".
 3:     opacity: 0;
 4: 
 5:     &:first-of-type {
-6:       $dot-size: 50vh;
+6:       $dot-size: 50vmin;
 7:       background-color: $me;
 8:       opacity: 1;
 9: 
-10:       margin-left: 25vh;
-11:       margin-top: 25vh;
+10:       margin-left: 25vmin;
+11:       margin-top: 25vmin;
 12: 
 
 Backtrace:
@@ -164,4 +164,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$me\".\A         on line 7 of /Users/jeremy/projects/jnf/abstractions-presentation/source/stylesheets/me.scss\A \A 2:   #dots > div {\A 3:     opacity: 0;\A 4: \A 5:     &:first-of-type {\A 6:       $dot-size: 50vh;\A 7:       background-color: $me;\A 8:       opacity: 1;\A 9: \A 10:       margin-left: 25vh;\A 11:       margin-top: 25vh;\A 12: "; }
+  content: "Error: Undefined variable: \"$me\".\A         on line 7 of /Users/jeremy/projects/jnf/abstractions-presentation/source/stylesheets/me.scss\A \A 2:   #dots > div {\A 3:     opacity: 0;\A 4: \A 5:     &:first-of-type {\A 6:       $dot-size: 50vmin;\A 7:       background-color: $me;\A 8:       opacity: 1;\A 9: \A 10:       margin-left: 25vmin;\A 11:       margin-top: 25vmin;\A 12: "; }
