@@ -11,7 +11,7 @@ My session isn't a presentation or demonstration. It's a discussion. I've got so
 
 ## This Is Me
 - 10+ years of professional experience
-- Self-taught
+- "Self-taught"
 - Shipped code in a dozen stacks and languages
 - Privileged background
   - social sciences background
