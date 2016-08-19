@@ -3,12 +3,12 @@
     opacity: 0;
 
     &:first-of-type {
-      $dot-size: 50vh;
+      $dot-size: 50vmin;
       background-color: $me;
       opacity: 1;
 
-      margin-left: 25vh;
-      margin-top: 25vh;
+      margin-left: 25vmin;
+      margin-top: 25vmin;
 
       height: $dot-size;
       width: $dot-size;
