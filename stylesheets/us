@@ -11,7 +11,7 @@ Error: Undefined variable: "$length".
 7:       $mod-x: (($length - $i) % $dots-per-row) * $dot-size;
 8:       
 9:       > div:nth-of-type(#{$i}) {
-10:         background: nth($colors-list, $i);
+10:         background: $color;
 
 Backtrace:
 /Users/jeremy/projects/jnf/abstractions-presentation/source/stylesheets/us.scss:5
@@ -152,4 +152,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$length\".\A         on line 5 of /Users/jeremy/projects/jnf/abstractions-presentation/source/stylesheets/us.scss\A \A 1: #slide.us {\A 2:   #dots {\A 3:     $mod-y: 0vh;\A 4: \A 5:     @for $i from 1 through $length {\A 6:       $color: nth($colors-list, $i);\A 7:       $mod-x: (($length - $i) % $dots-per-row) * $dot-size;\A 8:       \A 9:       > div:nth-of-type(#{$i}) {\A 10:         background: nth($colors-list, $i);"; }
+  content: "Error: Undefined variable: \"$length\".\A         on line 5 of /Users/jeremy/projects/jnf/abstractions-presentation/source/stylesheets/us.scss\A \A 1: #slide.us {\A 2:   #dots {\A 3:     $mod-y: 0vh;\A 4: \A 5:     @for $i from 1 through $length {\A 6:       $color: nth($colors-list, $i);\A 7:       $mod-x: (($length - $i) % $dots-per-row) * $dot-size;\A 8:       \A 9:       > div:nth-of-type(#{$i}) {\A 10:         background: $color;"; }
