@@ -23,17 +23,15 @@
 
       $angle: (360 / $item-count);
       $rotation: 0;
-      $delay: 0s;
 
       @for $i from 1 through $item-count {
         $color: nth($colors-list, $i * 4);
-        $delay: 0.1s * $i;
         &:nth-of-type(#{$i}) {
           background-color: $color;
-          transition: all 1s $delay $curve;
+          transition: all 1s 0s $curve;
           transform: 
             rotate($rotation * 1deg) 
-            translate($circle-size / 25) 
+            translate($circle-size / 20) 
         }
 
         $rotation: $rotation + $angle;
@@ -42,11 +40,8 @@
       &:nth-of-type(21),
       &:nth-of-type(22),
       &:nth-of-type(23) {
-        background-color: darken(red, 20%);
-        transition: background-color 3s 0s ease-in-out,
-                    top 1s $delay*1.5 ease-in-out,
-                    left 1s $delay*1.5 ease-in-out,
-                    border-radius 1.5s $delay*1.5 ease-in-out;
+        background-color: $background;
+        transition: none;
       }
 
       &:nth-of-type(21) {
