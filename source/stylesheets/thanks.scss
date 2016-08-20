@@ -1,0 +1,78 @@
+// adapted from https://css-tricks.com/snippets/sass/placing-items-circle/
+// credit to Ana Tudor -- https://twitter.com/thebabydino
+
+#slide.thanks {
+  #dots {
+    $item-count: 20;
+    $circle-size: 80vh;
+    $item-size: 10vh;
+
+    position: relative;
+    padding: 0;
+    border-radius: 50%;
+
+    
+    > div {
+      display: block;
+      height: $item-size;
+      left: 50vh;
+      margin: -($item-size / 2);
+      position: absolute;
+      top:  50%; 
+      width:  $item-size;
+
+      $angle: (360 / $item-count);
+      $rotation: 0;
+      $delay: 0s;
+
+      @for $i from 1 through $item-count {
+        $color: nth($colors-list, $i * 4);
+        $delay: 0.1s * $i;
+        &:nth-of-type(#{$i}) {
+          background-color: $color;
+          transition: all 1s $delay $curve;
+          transform: 
+            rotate($rotation * 1deg) 
+            translate($circle-size / 25) 
+        }
+
+        $rotation: $rotation + $angle;
+      }
+
+      &:nth-of-type(21),
+      &:nth-of-type(22),
+      &:nth-of-type(23) {
+        background-color: darken(red, 20%);
+        transition: background-color 3s 0s ease-in-out,
+                    top 1s $delay*1.5 ease-in-out,
+                    left 1s $delay*1.5 ease-in-out,
+                    border-radius 1.5s $delay*1.5 ease-in-out;
+      }
+
+      &:nth-of-type(21) {
+        left: 46.8vh;
+        top: 48.5%;
+      }
+
+      &:nth-of-type(22) {
+        left: 53.3vh;
+        top: 48.5%;
+      }
+
+      &:nth-of-type(23) {
+        border-radius: 0;
+        transform: rotate(45deg) scale(0.8);
+        top: 52%;
+      }
+    }
+  }
+}
+
+#slide.thanks {
+  #title {
+    .thanks {
+      opacity: 1;
+      top: 0;
+    }
+  }
+}

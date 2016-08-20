@@ -65,4 +65,6 @@ It's these traits, and how to teach to them, that I want to discuss with all of 
 Takeaway: If you're enticed by one of the other amazing discussions happening in here, here is my tl;dr on how to be a good mentor or teacher. It's a set of overlapping skills that need equal representation, every damn day. It's really hard and really tiring, but also extraordinarily rewarding.
 
 ## Let's Discuss
-All developers and community memebers are welcome. Everyone has a perspective to contribute. Senior devs, let's talk mentoring approach and strategy and figure out how to grow our empathy as we reach across the experience divide. Junior devs, let's talk about moving through the levels of expertise as defined by the Brothers Dreyfus. 
+All developers and community memebers are welcome. Everyone has a perspective to contribute. Senior devs, let's talk mentoring approach and strategy and figure out how to grow our empathy as we reach across the experience divide. Junior devs, let's talk about moving through the levels of expertise as defined by the Brothers Dreyfus.
+
+## Thank You

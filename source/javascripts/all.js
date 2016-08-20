@@ -12,6 +12,7 @@ const slide = document.getElementById('slide')
     'stages',
     'values',
     'discuss',
+    'thanks'
   ]
 
 
