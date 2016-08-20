@@ -2,13 +2,13 @@ $colors-list: #5d93a7 #b3e791 #4002d5 #06cdea #193ed6 #9f12b7 #08e187 #1e35ea #6
 
 $background: #000;
 $text-background: lighten($background, 10%);
-$me: #43efe7;
+$me: darken(#43efe7, 20%);
 
-$edu-self: darken(#68ea7c, 20%);
-$edu-cs: lighten(#68ea7c, 20%);
+$edu-self: darken(#68ea7c, 30%);
+$edu-cs: lighten(#68ea7c, 10%);
 
-$exp-more: rgb(244, 95, 24);
-$exp-less: lighten($exp-more, 30%);
+$exp-more: darken(rgb(244, 95, 24), 10%);
+$exp-less: lighten($exp-more, 35%);
 
 $empathy: #e513c8;
 $patience: #239df0;
@@ -16,4 +16,4 @@ $consistency: #2ee507;
 $teaching: rgb(133, 85, 195);
 
 $stage: #a35fcb;
-$stages: lighten($stage, 20%) lighten($stage, 10%) $stage darken($stage, 10%) darken($stage, 20%)
+$stages: lighten($stage, 10%) $stage $stage darken($stage, 20%) darken($stage, 30%)

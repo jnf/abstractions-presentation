@@ -7,7 +7,7 @@
       $mod-x: (($length - $i) % $dots-per-row) * $dot-size;
       
       > div:nth-of-type(#{$i}) {
-        background: nth($colors-list, $i);
+        background: $color;
         margin-left: $mod-x;
         margin-top: $mod-y;
         transition-delay: $i / 50 + s;
