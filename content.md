@@ -38,7 +38,7 @@ The developer survey says most of us came into software development by a means t
 We're a young industry, compared to, say, plumbing or farming. Most of us aren't experienced in terms of total years of industry participation.
 
 ## There's Been Research
-So what does this mean? Well, how about this:
+So what does this mean? Before I answer that, let me tell you a bit about another industry. In this industry...
 
 - Expert staff members working in the trenches aren't always recognized as experts or paid accordingly
 - Not all expert staff want to end up as managers
